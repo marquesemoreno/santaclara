@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Clínica Cirúrgica Santa Clara — Vitória da Conquista</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #faf8f4;
+      --surface: #ffffff;
+      --text: #1f2a2d;
+      --muted: #5e6d70;
+      --teal: #0f7d7d;
+      --teal-2: #0a5c5c;
+      --sand: #d8c8a7;
+      --sand-light: #f2e8cf;
+      --border: #ece5d6;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { height: 100%; }
+    body {
+      font-family: 'Poppins', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+    .wrap { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+    header {
+      background: linear-gradient(135deg, #f2ece0, #e9dfc6);
+      border-bottom: 1px solid var(--border);
+      padding: 44px 20px 48px;
+    }
+    header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 18px; }
+    .brand { display: flex; align-items: center; gap: 14px; }
+    .brand-mark {
+      width: 64px; height: 64px; border-radius: 16px;
+      background: #fff; border: 1px solid var(--border);
+      display: grid; place-items: center; font-size: 28px;
+      box-shadow: 0 10px 30px rgba(15,125,125,0.08);
+    }
+    header h1 {
+      font-family: 'Fraunces', Georgia, serif;
+      font-weight: 700;
+      font-size: clamp(22px, 2.4vw, 30px);
+      color: #1a2a2d;
+      line-height: 1.15;
+    }
+    header p { color: var(--muted); font-size: 14px; margin-top: 6px; }
+    .cta-row { margin-top: 18px; display: flex; flex-wrap: wrap; gap: 10px; }
+    .btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 12px 16px; border-radius: 12px;
+      text-decoration: none; font-weight: 600; font-size: 14px;
+      border: 1px solid transparent;
+    }
+    .btn-whatsapp { background: #25d366; color: #fff; }
+    .btn-whatsapp:hover { background: #1eaa50; }
+    .btn-phone { background: #fff; color: var(--teal); border-color: var(--border); }
+    .btn-phone:hover { border-color: var(--teal); }
+
+    .hero { padding: 40px 20px 28px; }
+    .hero .wrap { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 24px; align-items: stretch; }
+    @media (max-width: 860px) { .hero .wrap { grid-template-columns: 1fr; } }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 24px;
+      box-shadow: 0 20px 60px rgba(20,30,30,0.05);
+    }
+    .card h2 {
+      font-family: 'Fraunces', Georgia, serif;
+      font-weight: 700;
+      color: var(--teal);
+      margin-bottom: 10px;
+    }
+    .info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 14px; }
+    @media (max-width: 640px) { .info-grid { grid-template-columns: 1fr; } }
+    .info-item strong { display: block; color: var(--teal); font-weight: 600; margin-bottom: 4px; }
+    .info-item p { color: var(--muted); font-size: 14px; }
+
+    .services { margin-top: 10px; display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+    @media (max-width: 640px) { .services { grid-template-columns: 1fr; } }
+    .service {
+      background: linear-gradient(180deg, #fff 0%, #fdfbf5 100%);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 16px;
+    }
+    .service strong { color: var(--teal); display: block; margin-bottom: 6px; }
+    .service p { color: var(--muted); font-size: 13px; }
+
+    .pill {
+      display: inline-flex; padding: 5px 10px;
+      background: var(--sand-light); color: #5a4a26;
+      border-radius: 999px; font-size: 12px; font-weight: 600;
+      border: 1px solid #ead9a8;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 28px 20px 40px;
+      color: var(--muted);
+      font-size: 13px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <div class="brand">
+        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" style="border-radius:16px; background:#fff; border:1px solid #ece5d6; box-shadow:0 10px 30px rgba(15,125,125,0.08);">
+  <rect width="64" height="64" rx="16" fill="white"/>
+  <path d="M32 14 L32 34 M22 24 L32 14 L42 24" stroke="#0f7d7d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="18" y="34" width="28" height="20" rx="4" stroke="#0f7d7d" stroke-width="3" fill="none"/>
+  <line x1="18" y1="40" x2="46" y2="40" stroke="#0f7d7d" stroke-width="2" opacity="0.5"/>
+  <line x1="18" y1="46" x2="40" y2="46" stroke="#0f7d7d" stroke-width="2" opacity="0.5"/>
+  <line x1="18" y1="52" x2="34" y2="52" stroke="#0f7d7d" stroke-width="2" opacity="0.5"/>
+  <circle cx="32" cy="26" r="3" fill="#0f7d7d"/>
+</svg>
+
+        <div>
+          <h1>Clínica Cirúrgica Santa Clara</h1>
+          <p>Excelência em atendimento cirúrgico e urgências • Vitória da Conquista, BA</p>
+        </div>
+      </div>
+      <div class="cta-row">
+        <a class="btn btn-phone" href="tel:+5577342774740">📞 (77) 3427-7740</a>
+        <a class="btn btn-whatsapp" href="https://wa.me/5577342774740?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta%20na%20Clínica%20Cirúrgica%20Santa%20Clara." target="_blank" rel="noopener">💬 WhatsApp</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="wrap">
+      <div class="card">
+        <span class="pill">Unidade • Vitória da Conquista</span>
+        <h2 style="margin-top:10px;">Informações</h2>
+        <div class="info-grid">
+          <div class="info-item">
+            <strong>📞 Telefone</strong>
+            <p>(77) 3427-7740</p>
+          </div>
+          <div class="info-item">
+            <strong>📍 Endereço</strong>
+            <p>Avenida Otávio Santos, 237 — Centro</p>
+          </div>
+          <div class="info-item">
+            <strong>🕒 Atendimento</strong>
+            <p>Seg–Sex: 7h às 19h</p>
+          </div>
+          <div class="info-item">
+            <strong>🏥 Convênios</strong>
+            <p>Consulte na recepção</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <h2>Serviços</h2>
+        <div class="services">
+          <div class="service"><strong>Cirurgias Gerais</strong><p>Alta complexidade e segurança</p></div>
+          <div class="service"><strong>Urgências</strong><p>Atendimento cirúrgico 24h</p></div>
+          <div class="service"><strong>Pré e Pós-Operatório</strong><p>Acompanhamento completo</p></div>
+          <div class="service"><strong>Consultas</strong><p>Avaliação e planejamento cirúrgico</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="card">
+        <h2>Por que escolher a Santa Clara?</h2>
+        <div class="services" style="grid-template-columns: repeat(3, 1fr);">
+          <div class="service"><strong>Equipe experiente</strong><p>Cirurgiões qualificados</p></div>
+          <div class="service"><strong>Estrutura moderna</strong><p>Tecnologia e conforto</p></div>
+          <div class="service"><strong>Humanização</strong><p>Atendimento próximo e acolhedor</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <p>Clínica Cirúrgica Santa Clara — CNPJ: 04.613.761/0001-70</p>
+      <p style="margin-top:8px; opacity:.75;">© <span id="ano"></span>. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+  <script>document.getElementById('ano').textContent = new Date().getFullYear()</script>
+</body>
+</html>
